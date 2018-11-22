@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+
+    
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Darren Ramsook | Electrical &amp; Computer Engineer Data Scientist</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Darren Ramsook" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Electrical &amp; Computer Engineer Data Scientist" />
+<meta property="og:description" content="Electrical &amp; Computer Engineer Data Scientist" />
+<link rel="canonical" href="http://localhost:4000/projects/autoeq/" />
+<meta property="og:url" content="http://localhost:4000/projects/autoeq/" />
+<meta property="og:site_name" content="Darren Ramsook" />
+<script type="application/ld+json">
+{"description":"Electrical &amp; Computer Engineer Data Scientist","@type":"WebPage","url":"http://localhost:4000/projects/autoeq/","headline":"Darren Ramsook","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+  </head>
+  <body>
+
+    <header class="page-header" role="banner">
+      <h1 class="project-name">DarrenR.co.tt</h1>
+      <h2 class="project-tagline">Electrical & Computer Engineer | Data Scientist</h2>
+      
+      
+      <button class ='btn' onclick="location.href='/#'" type="button">
+        Home</button>
+      <button class ='btn' onclick="location.href='/projects'" type="button">
+            Projects</button>
+      <button class ='btn' onclick="location.href='/aboutme'" type="button">
+                About Me</button>
+      
+
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <h2 id="realtime-auto-equalizaiton-system-based-on-acoustic--visual-feedback">Realtime Auto Equalizaiton System Based on Acoustic &amp; Visual Feedback</h2>
+
+<p>This project was a 9-month long venture in conjunction with the Univeristy of the West Indies.</p>
+
+<p><em>The actual project report is 80 pages long and quite technical. If you want to know more about it, send me an <a href="mailto:darrenramsook@outlook.com">email</a>.</em></p>
+
+<p><img src="/img/lms.png" alt="alt text" title="Project in action" />
+<em>Fun Audio Processing</em></p>
+
+<hr />
+
+<h3 id="project-introduction">Project Introduction</h3>
+
+<p>The playback quality of sound is a critical aspect on the impact it has to the psychoacoustic effect of the listener. Music plays a key role in the bar and restaurant industry as the genre and tempo of the music played has an influence on the amount of money spent by the average patron. However most of these environments are noisy and dynamic in nature, leading the audio signal to decay and become corrupted. The traditional response to counteract this problem would be to raise the entire volume of the output channel signal to the audience’s liking in order to mask the inconsistencies in the signal. This approach requires manual participation and knowledge of the room acoustics by the user to properly equalize the signal. Even if the signal is equalized properly, any deviation in the environment would mean that the quondam settings would need to be redone to satisfy the new environment. This paper details the design and prototyping of an Automatic Equalization (AutoEQ) system.</p>
+
+<hr />
+
+<h3 id="general-idea">General Idea</h3>
+
+<p>This system detected acoustic and visual changes in the environment and equalized the audio signal to suit. The acoustic changes were monitored through an audio interface and microphone connected to a computer. The noise was then filtered out and the signal was compared against an equalization template based on the genre of music. The visual changes, which were related to the position of people in the room, was detected through a camera interfaced with a computer. This positioning of listeners in the room was then related to the positioning of the speakers in the room. The information obtained by both these processes then allowed to system to adjust the signal accordingly and played back through a multichannel speaker system. This system was designed to be operated without regular human input.</p>
+
+<hr />
+
+<h3 id="image-feedback">Image Feedback</h3>
+
+<p>The OpenCV library was used to extract the location and number of people in a given image. A Background Subtraction with Kalman Filtering approach was utilized to do this.<br />
+Tracks were created as structure to maintain the status of an object being tracked. Within the track structure the following information was recorded for each object:</p>
+
+<ul>
+  <li>Identification Number of the track</li>
+  <li>The bounding box of the object</li>
+  <li>Kalman Filter used for tracking</li>
+  <li>Counter that indicates the number of frames since the track was initially detected</li>
+  <li>Number of frames that the track was visible</li>
+  <li>Number of frames that the track was invisible</li>
+</ul>
+
+<p><img src="/img/opencv1.png" alt="alt text" title="Project in Action" /> <img src="/img/opencv2.png" alt="alt text" title="Project in Action" /></p>
+
+<hr />
+
+<h3 id="audio-feedback">Audio Feedback</h3>
+
+<p>Adaptive filtering technqiues were utilized and compared against each other to determine the best noise removal filter. This was found the be the LMS filter. This was done through a computer simulation and real world experiment where a singal is corrputed and then fed into the Noise removal sub system.</p>
+
+
+      <footer class="site-footer">
+        
+        <span class="site-footer-credits">This website reflects the creator's opinions alone. His views are not related to any of the organizations mentioned. Want to know how this page was created? Click <a href="https://pages.github.com">here</a>.</span>
+      </footer>
+    </main>
+  </body>
+</html>
