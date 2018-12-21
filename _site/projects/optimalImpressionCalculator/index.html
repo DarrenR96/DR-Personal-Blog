@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+
+    
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Darren Ramsook | Electrical &amp; Computer Engineer Data Scientist</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Darren Ramsook" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Electrical &amp; Computer Engineer Data Scientist" />
+<meta property="og:description" content="Electrical &amp; Computer Engineer Data Scientist" />
+<link rel="canonical" href="http://localhost:4000/projects/optimalImpressionCalculator/" />
+<meta property="og:url" content="http://localhost:4000/projects/optimalImpressionCalculator/" />
+<meta property="og:site_name" content="Darren Ramsook" />
+<script type="application/ld+json">
+{"description":"Electrical &amp; Computer Engineer Data Scientist","@type":"WebPage","url":"http://localhost:4000/projects/optimalImpressionCalculator/","headline":"Darren Ramsook","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+  </head>
+  <body>
+
+    <header class="page-header" role="banner">
+      <h1 class="project-name">DarrenR.co.tt</h1>
+      <h2 class="project-tagline">Electrical & Computer Engineer | Data Scientist</h2>
+      
+      
+      <button class ='btn' onclick="location.href='/#'" type="button">
+        Home</button>
+      <button class ='btn' onclick="location.href='/projects'" type="button">
+            Projects</button>
+      <button class ='btn' onclick="location.href='/aboutme'" type="button">
+                About Me</button>
+      
+
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <h2 id="optimal-impression-calculator-for-multi-stage-advertisement-campaigns-on-social-media">Optimal Impression Calculator for Multi-Stage Advertisement Campaigns on Social Media</h2>
+
+<p>This calculator utilizes a dynamic approach to optimally (maximization) allocate advertisements across a Bi-stage Advertisement Campaign and calculate the expected number of clicks for that assignment.
+<img src="/img/oicsc.png" alt="alt text" title="Screenshot of Program Running" />
+<em>Optimal Impression Calculator</em></p>
+
+<h3 id="operation">Operation</h3>
+
+<p>Basically the scenario is this: For a given person (node) in an Online Social Network (OSN) who has friends represented by edges connected to another node; the probability of that node clicking an advertisement is partially dependent on the actions of that node’s friends when they are presented with the same advertisement. So think of a someone named Tom who has three friends: Kim, Joe &amp; Jill. Suppose the advert was shown to Joe intially and Joe clicked on it. Because of this, the likelihood of Tom clicking the advert will be increased.</p>
+
+<p>The equation to update the probability of a given node is defined as follows:</p>
+
+<p><img src="http://latex.codecogs.com/gif.latex?p%20%5Cleftarrow%20max%5C%7B0%2C%20min%5C%7B0.25%20+%20%5Calpha*%28%5Cfrac%7Bn%7D%7Bf%7D%29%20%5C%7D%20%5C%7D" alt="alt text" title="Update Probability Equation" /></p>
+
+<p>Where alpha is a given scaling constant, (in this case 0.15). n is the total number of friends of a given node that clicked an impression when it was shown to them. f is the total number of a friends for the user under examination.</p>
+
+<p>For more information about this check out this paper: <a href="https://link.springer.com/chapter/10.1007/978-3-319-89932-9_4">On the Problem of Multi-Staged Impression Allocation in Online Social Networks</a>, done by <a href="https://www.linkedin.com/in/inzamam-rahaman-721b40b8/">Inzamam Rahaman</a> and <a href="http://hosein.tt">Patrick Hosein</a>.</p>
+
+<p>The front end was created entirely utilizing Tkinter, with matplotlib being used for graphing the networks. The backend of the program was done using an object oriented approach and <a href="https://networkx.github.io/">NetworkX</a>. To determine the optimal allocaiton; all allocations were have to be considered. The basic flow diagram for calculating the Expectation of the number of clicks based on the impression allocation is shown below.</p>
+
+<p><img src="/img/oicfl.png" alt="alt text" title="Flow Diagram of Calculating Expectance" />
+<em>Flow Diagram for an assignment of [2,3] at the first and second stage</em></p>
+
+
+      <footer class="site-footer">
+        
+        <span class="site-footer-credits">This website reflects the creator's opinions alone. His views are not related to any of the organizations mentioned. Want to know how this page was created? Click <a href="https://pages.github.com">here</a>.</span>
+      </footer>
+    </main>
+  </body>
+</html>

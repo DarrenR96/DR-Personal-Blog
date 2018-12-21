@@ -9,7 +9,7 @@ categories: projects
 
 ## Projects at Caribbean Entertainment Technologies
 
-Projects taken here were private and cannot be displayed, however a small discussion on some techniques used in these projcets is presented.
+Projects taken here were private and cannot be displayed, however a small discussion on some techniques used in these projects is presented.
 
 ---
 

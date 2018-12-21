@@ -6,7 +6,7 @@ layout: default
 title: Darren Ramsook
 ---
 
-Hi! My name is Darren Ramsook & I'm an Electrical & Computer Engineer with a keen interest in audio and image signal processing. This interest in Audio/Image processing is mainly due to the arts having a special place in my heart & also because I'm an avid [musician](https://www.youtube.com/watch?v=K2eKF5-HeXI).  
+Hi! My name is Darren Ramsook & I'm an Electrical & Computer Engineer with a keen interest in audio and image signal processing. This interest in Audio/Image processing is mainly due to the arts having a special place in my heart & also because I'm an avid [musician](https://www.youtube.com/watch?v=1eQwDnTptmY).  
 Currently I am pursuing my MSc. in Data Science at the Univeristy of the West Indies (UWI). I combine my love for signal processing, software engineering and data science to help systems better analyze the world around us.
 
 ---
@@ -24,7 +24,8 @@ I just graduated with my BSc. in Electrical & Computer Engineering from the [Uni
 
 ### Recently I have ...
 
-- started a job as an Associate Professional at the Microsoft Innovation Center Trinidad ([CARIRI](http://www.cariri.com/)).
+- started a job as an Associate Professional at the Electrical & Computer Engineering Department in the University of the West Indies.
+- worked as an Associate Professional at the Microsoft Innovation Center Trinidad ([CARIRI](http://www.cariri.com/)).
 - registered and started a [MSc. Data Science programme](https://sta.uwi.edu/fst/dcit/dcit_postgraduate/DataScience) in the University of the West Indies.
 - been awarded a BSc. in Electrical & Computer Engineering from the University of the West Indies.
 - launched an [online learning platform](http://elearncaribbean.com) catered to bringing education across the Caribbean. This story was published both by the Guardian and the [Newsday](https://newsday.co.tt/2018/09/09/schol-winner-gives-back/?fbclid=IwAR3XTF0FkbGgdwc-BwEzGEo6WC_whziSY1l0GKoTfGdF0bjTlQ0UgQ2hJII).
